@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="p3n-aW-8TT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="chs-f4-3ny">
+            <objects>
+                <viewController id="p3n-aW-8TT" customClass="JGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Pj-LJ-Hdc"/>
+                        <viewControllerLayoutGuide type="bottom" id="O5E-hG-K3K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HOE-HW-1wh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1A-Ul-eFh">
+                                <rect key="frame" x="20" y="101" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="z19-OK-bZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="p3n-aW-8TT" id="BZ7-ey-0AT"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JG Input Accessory View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-QR-giR">
+                                <rect key="frame" x="20" y="72" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Gi-ZS-g6n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u1A-Ul-eFh" firstAttribute="top" secondItem="H2N-QR-giR" secondAttribute="bottom" constant="8" id="GOm-bD-kf0"/>
+                            <constraint firstItem="H2N-QR-giR" firstAttribute="leading" secondItem="HOE-HW-1wh" secondAttribute="leading" constant="20" id="IlE-R6-1nC"/>
+                            <constraint firstItem="H2N-QR-giR" firstAttribute="top" secondItem="1Pj-LJ-Hdc" secondAttribute="bottom" constant="52" id="dia-hF-ibq"/>
+                            <constraint firstItem="u1A-Ul-eFh" firstAttribute="leading" secondItem="HOE-HW-1wh" secondAttribute="leading" constant="20" id="hPn-Ub-bAH"/>
+                            <constraint firstAttribute="trailing" secondItem="u1A-Ul-eFh" secondAttribute="trailing" constant="20" id="rQp-Qm-79U"/>
+                            <constraint firstAttribute="trailing" secondItem="H2N-QR-giR" secondAttribute="trailing" constant="20" id="rq4-Jf-yA4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtField" destination="u1A-Ul-eFh" id="h8v-kT-7wv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aS1-EF-yYW" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
